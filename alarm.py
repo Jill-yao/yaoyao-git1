@@ -16,7 +16,7 @@ def  baby_remind():
 
 schedule.every(5).minutes.do(baby_remind)
 
-print("宝宝闹钟启动!每5分值弹窗+响铃,不要关闭终端窗口,Ctrl+C退出")
+print("宝宝闹钟启动!每5分钟弹窗+响铃,不要关闭终端窗口,Ctrl+C退出")
 try:
     while True:
         schedule.run_pending()
